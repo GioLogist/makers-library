@@ -109,3 +109,6 @@ $RECYCLE.BIN/
 # Others
 lib/
 data/
+
+# Configs
+config/local.json
