@@ -1,0 +1,4 @@
+{
+  "watch": ["*.*", "../shared/lib"],
+  "ext": "js,mjs,json"
+}
