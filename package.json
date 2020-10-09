@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "workspaces": {
+    "nohoist": [
+      "**react-native**",
+      "**react-native**/**"
+    ],
+    "packages": [
+      "api",
+      "mobile",
+      "shared/ui",
+      "shared/lib",
+      "web"
+    ]
+  }
+}

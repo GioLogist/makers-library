@@ -23,6 +23,8 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import { logHello } from 'shared-lib';
+import Button from 'shared-ui/components/Button';
 
 const App: () => React$Node = () => {
   return (
@@ -39,6 +41,7 @@ const App: () => React$Node = () => {
             </View>
           )}
           <View style={styles.body}>
+            <Button onClick={logHello}><Text>Press Me</Text></Button>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Step One</Text>
               <Text style={styles.sectionDescription}>

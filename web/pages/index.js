@@ -1,13 +1,17 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import { logHello } from 'shared-lib'
+import Button from 'shared-ui/components/Button'
 
 export default function Home() {
+  
   return (
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Button onClick={logHello}>Click Me</Button>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
