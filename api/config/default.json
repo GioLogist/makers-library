@@ -12,8 +12,16 @@
     "secret": "MaUvKJjOSDqmbl147WLt8O5OyLo=",
     "authStrategies": [
       "jwt",
-      "local"
+      "local",
+      "firebase"
     ],
+    "oauth": {
+      "redirect": "/",
+      "firebase": {
+        "key": "<Client ID>",
+        "secret": "<Client Secret>"
+      }
+    },
     "jwtOptions": {
       "header": {
         "typ": "access"

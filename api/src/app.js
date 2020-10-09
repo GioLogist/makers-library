@@ -17,6 +17,7 @@ const appHooks = require('./app.hooks');
 const channels = require('./channels');
 
 const authentication = require('./authentication');
+const { initialize: initializeFirebase } = require('./firebase');
 
 const app = express(feathers());
 
@@ -49,5 +50,6 @@ app.use(express.notFound());
 app.use(express.errorHandler({ logger }));
 
 app.hooks(appHooks);
+app.configure(initializeFirebase);
 
 module.exports = app;
