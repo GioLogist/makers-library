@@ -6,8 +6,7 @@ const hooks = require('./users.hooks');
 module.exports = function (app) {
   const options = {
     Model: createModel(app),
-    paginate: app.get('paginate'),
-    multi: true
+    paginate: app.get('paginate')
   };
 
   // Initialize our service with any options it requires
