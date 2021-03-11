@@ -1,4 +1,5 @@
 {
+  "makers_examples_enabled": true,
   "host": "localhost",
   "port": 3030,
   "public": "../public/",
